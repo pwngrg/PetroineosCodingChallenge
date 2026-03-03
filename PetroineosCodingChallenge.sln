@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntradayReportGenerator", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntradayReportGenerator.Services", "IntradayReportGenerator.Services\IntradayReportGenerator.Services.csproj", "{04F38676-73CC-9C35-15C7-E863E460D8D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntradayReportGenerator.Tests", "IntradayReportGenerator.UnitTests\IntradayReportGenerator.Tests.csproj", "{905DBC5B-10E6-3E45-2012-873B15AA5DF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntradayReportGenerator.Tests", "IntradayReportGenerator.Tests\IntradayReportGenerator.Tests.csproj", "{905DBC5B-10E6-3E45-2012-873B15AA5DF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

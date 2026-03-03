@@ -1,6 +1,7 @@
 using IntradayReportGenerator;
 using IntradayReportGenerator.Interfaces;
 using IntradayReportGenerator.Services;
+using IntradayReportGenerator.Services.Helper;
 using IntradayReportGenerator.Services.Interfaces;
 using Services;
 
@@ -19,6 +20,7 @@ var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddScoped<ITradeAggregator, TradeAggregator>();
 builder.Services.AddScoped<IExtractGenerator, CSVGenerator>();
 builder.Services.AddScoped<IPowerService, PowerService>();
+builder.Services.AddScoped<IFileWriter, FileWriter>();
 builder.Services.AddSingleton(TimeProvider.System);
 
 

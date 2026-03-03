@@ -4,7 +4,7 @@ using System.Text;
 
 namespace IntradayReportGenerator.Services;
 
-public class CSVGenerator : IExtractGenerator
+public class CSVGenerator(IFileWriter fileWriter) : IExtractGenerator
 {
     public async Task ExportData(string filePath, IEnumerable<PowerTradeAggregated> powerTradeAggregatedList)
     {
@@ -15,6 +15,6 @@ public class CSVGenerator : IExtractGenerator
         {
             builder.AppendLine($"{powerTradeAggregated.LocalTime},{powerTradeAggregated.Volume}");
         }
-        await File.WriteAllTextAsync(filePath, builder.ToString());
+        await fileWriter.WriteAllTextAsync(filePath, builder.ToString());
     }
 }

@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/IntradayReportGenerator/bin/Debug/net10.0
+/IntradayReportGenerator/obj
+/IntradayReportGenerator.Services/bin/Debug/net10.0
+/IntradayReportGenerator.Services/obj
+/IntradayReportGenerator.UnitTests/bin/Debug/net10.0
+/IntradayReportGenerator.UnitTests/obj/Debug/net10.0
+/IntradayReportGenerator.UnitTests/obj
